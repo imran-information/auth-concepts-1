@@ -9,6 +9,10 @@ const Register = () => {
         e.preventDefault()
         const email = e.target.email.value
         const password = e.target.password.value
+        if (password > 6) {
+            return alert('password must be 6 carecters')
+        }
+        
         handleSignUp(email, password)
     }
     return (

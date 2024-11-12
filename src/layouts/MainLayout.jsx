@@ -18,6 +18,7 @@ const MainLayout = () => {
     }
 
     const handleSignUp = (email, password) => {
+        
         setLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then(res => console.log(res.user))
